@@ -2,9 +2,9 @@ version: "3.8"
 
 services:
   nginx:
-    build:
-      context: ./nginx
-    container_name: nginx
+    build: ./nginx
+    image: nginx
+    container_name: "nginx_cont"
     ports:
       - "80:80"
     restart: always
